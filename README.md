@@ -17,7 +17,7 @@ The file "Digispark-keystrokes.txt" contains the method to keybinding and a list
 
 
 ## (GIVE-HEADER-NAME)
-All payloads will be saved in .txt files to avoid anti-virus deleting anything when you download/clone the repository.
+All payloads will be supplied in both .TXT and .INO formats, so that there is a ready-to-deploy and an editable variant of every payload.
 
 
 
