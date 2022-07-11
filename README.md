@@ -12,12 +12,11 @@ The file "---.txt" contains the basics for writing and deploying a payload to th
 
 The file "---.txt" contains the basics for writing and deploying a payload to the Rubber Ducky, and can be found in ".Tutorials\Rubber Ducky\General".
 
-The file "---txt" contains the method to keybinding and a list of possible keybinds for the Digispark USB, and can be found in ".\Tutorials\Digispark\General".
+The file "Digispark-keystrokes.txt" contains the method to keybinding and a list of possible keybinds for the Digispark USB, and can be found in the root folder.
 
 
 
-## (NO-TEXT-YET)
-
+## (GIVE-HEADER-NAME)
 All payloads will be saved in .txt files to avoid anti-virus deleting anything when you download/clone the repository.
 
 
@@ -41,22 +40,23 @@ Then there is the multi line comment, which goes as following:
 
 Basic example:
 
-#include "DigiKeyboard.h"
+	#include "DigiKeyboard.h"
 
-void setup() {
-    // Left empty.
-}
+	void setup() {
+    		// Left empty.
+	
+	}
 
-void loop() {
+	void loop() {
 
-    DigiKeyboard.print();
-    DigiKeyboard.sendKeyStroke();
-    DigiKeyboard.delay(1000);
+    		DigiKeyboard.print();
+    		DigiKeyboard.sendKeyStroke();
+    		DigiKeyboard.delay(1000);
 
-    // Opens up a browser and goes to a David Bombal video.
+    		// Opens up a browser and goes to a David Bombal video.
 
-    DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT , KEY_R);
-    DigiKeyboard.print('https://www.youtube.com/watch?v=OsY32K1s51Y');
-    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    		DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT , KEY_R);
+    		DigiKeyboard.print('https://www.youtube.com/watch?v=OsY32K1s51Y');
+    		DigiKeyboard.sendKeyStroke(KEY_ENTER);
 
-}
+	}
